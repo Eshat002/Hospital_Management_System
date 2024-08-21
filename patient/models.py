@@ -10,7 +10,6 @@ blood_types = [
     ("AB-ve", "AB-ve"),
     ("O+ve", "O+ve"),
     ("O-ve", "O-ve"),
-     
 ]
 
 genders = [
@@ -18,20 +17,21 @@ genders = [
     ("female", "Female"),
 ]
 
+
 class Patient(models.Model):
     first_name = models.CharField(max_length=80)
     last_name = models.CharField(max_length=80)
     age = models.PositiveIntegerField()
     blood_group = models.CharField(choices=blood_types, max_length=10)
     gender = models.CharField(choices=genders, max_length=10, default="male")
-    phone = models.PositiveIntegerField(max_length=17)
+    phone = models.PositiveIntegerField()
     email = models.EmailField()
 
     class Meta:
-        ordering = ['-id']
-    
+        ordering = ["-id"]
+
     def get_full_name(self):
         return f"{self.first_name}{self.last_name}"
-    
+
     def __str__(self):
-        return  f"Patient - {self.first_name} {self.last_name}"
+        return f"Patient - {self.first_name} {self.last_name}"

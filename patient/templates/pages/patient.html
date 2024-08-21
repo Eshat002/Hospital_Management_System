@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{%  load static %}
+
+{% block style %}
+    <link rel="stylesheet" href="{% static 'pages/patient.css' %}">
+{% endblock style %}
+
+{% block content %}
+    <div id="patient">
+        <h2>patient</h2>
+    </div>
+
+{% endblock content%}
+
+{% block scripts %}
+    <script src="{% static 'pages/patient.js' %}"></script>
+{% endblock scripts %}
