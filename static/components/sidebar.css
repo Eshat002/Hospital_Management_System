@@ -1,0 +1,50 @@
+aside {
+  /* height: 100vh; */
+  background-color: white;
+  position: fixed;
+  height: 100%;
+  width: 280px;
+}
+
+aside .logout-menu {
+  position: absolute;
+  bottom: 20px;
+}
+
+aside .menu-container ul {
+  list-style-type: none;
+}
+aside .menu-container ul li i {
+  color: #7f8f98;
+}
+
+aside .menu-container ul li a {
+  font-weight: 400;
+  font-size: 14px;
+  color: #7f8f98;
+  text-decoration: none;
+  padding-left: 12px;
+}
+
+aside .menu-container .general-menus li {
+  margin-top: 35px;
+}
+
+aside .logo-container a {
+  /* display: flex; */
+  padding-left: 30px;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  text-decoration: none;
+  color: #242222;
+}
+
+aside .logo-container .logo-title {
+  font-weight: 600;
+  font-size: 20px;
+  /* padding-top: 20px;
+  display: inline-block; */
+}

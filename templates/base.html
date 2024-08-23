@@ -15,12 +15,16 @@
                 integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
                 crossorigin="anonymous"></script>
         <link rel="shortcut icon" type="image/png" href="{% static 'icons/favIcon.png' %}" />
+       <!-- font-awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!--swiperjs-->
+        <!--swiperjs-->
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
     <!--chartjs-->
     <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+
+
 
     <!--Custom css ADD HERE-->
         <link rel="stylesheet" type='text/css' href="{% static 'base.css' %}">
@@ -28,24 +32,18 @@
         {% endblock style %}
 
         {% block title %}
-            <title>LMS</title>
+            <title>HMS</title>
         {% endblock title %}
     </head>
     <body>
-        <div id="base">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-2">
-                        <div class="sidebar-container">
-                            {% include "components/sidebar.html" %}
-                        </div>
-                    </div>
-                    <div class="col-lg-10">
-                        {% block content %}
-                        {% endblock content %}
-                    </div>
-                </div>
-            </div>
+    <div id="base">
+        <div   class="sidebar-container">
+            {% include "components/sidebar.html" %}
+        </div>
+        <div  class="main">
+            {% block content %}
+            {% endblock content %}
+        </div>
         </div>
     </div>
 
