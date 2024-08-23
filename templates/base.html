@@ -36,14 +36,14 @@
         {% endblock title %}
     </head>
     <body>
-    <div id="base">
-        <div   class="sidebar-container">
-            {% include "components/sidebar.html" %}
-        </div>
-        <div  class="main">
-            {% block content %}
-            {% endblock content %}
-        </div>
+        <div id="base">
+            <div   class="sidebar-container">
+                {% include "components/sidebar.html" %}
+            </div>
+            <div  class="main">
+                {% block content %}
+                {% endblock content %}
+            </div>
         </div>
     </div>
 
