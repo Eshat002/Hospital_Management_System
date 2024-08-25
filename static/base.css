@@ -9,6 +9,8 @@ body {
 }
 
 #base {
-  display: flex;
-  /* justify-content: center; */
+  /* display: flex; */
+}
+#base .main {
+  margin-left: 300px;
 }

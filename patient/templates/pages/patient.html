@@ -7,7 +7,12 @@
 
 {% block content %}
     <div id="patient">
-        <h2>patient</h2>
+        <div class="headline-container">
+            Patient Details
+        </div>
+        <div class="patient-list-container">
+            {% include 'components/patient_list.html' %}
+        </div>
     </div>
 
 {% endblock content%}
