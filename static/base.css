@@ -12,5 +12,6 @@ body {
   /* display: flex; */
 }
 #base .main {
-  margin-left: 300px;
+  margin-left: 310px;
+  margin-right: 40px;
 }

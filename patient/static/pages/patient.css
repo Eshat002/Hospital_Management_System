@@ -1,1 +1,37 @@
- 
+#patient
+  .user-notification-container
+  .username-container
+  .user-detail-container
+  .name {
+  font-size: 14px;
+  font-weight: 500;
+  color: #374858;
+}
+
+#patient
+  .user-notification-container
+  .username-container
+  .user-detail-container
+  .status {
+  font-size: 12px;
+  font-weight: 400;
+  color: #808080;
+}
+
+#patient
+  .user-notification-container
+  .username-container
+  .avatar-container
+  img {
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+  border: 1px solid #242222;
+  border-radius: 50%;
+}
+
+#patient .page-headline-container .page-title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #374858;
+}

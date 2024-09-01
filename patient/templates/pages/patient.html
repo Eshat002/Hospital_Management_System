@@ -7,29 +7,29 @@
 
 {% block content %}
     <div id="patient">
-        <div class="page-headline-container d-flex justify-content-between">
+        <div class="page-headline-container d-flex justify-content-between align-items-baseline py-4">
             <div class="page-title-container">
                 <h2 class="page-title">Patient Details</h2>
             </div>
-            <div class="user-notification-container d-flex">
+            <div class="user-notification-container d-flex align-items-baseline">
                 <div class="icon-container">
                     <i class="fa-solid fa-bell fa-lg"></i>
                 </div>
-                <div class="username-container">
-                    <div class="avatar-container">
+                <div class="username-container d-flex">
+                    <div class="avatar-container px-3">
                         {% if user.is_authenticated %}
-                            <img width="30" height="30" src="{{user.account.avatar.url}}" alt="avatar">
-                        {% endif %}
+                        <img src="{{user.account.avatar.url}}" alt="avatar">
+                    {% endif %}                       
                     </div>
                     <div class="user-detail-container">
                         {% if user.is_authenticated %}
                             {% if user.account.first_name and user.account.last_name %}
-                                {{ user.account.get_full_name}}
+                               <span class="name">{{ user.account.get_full_name}}</span> 
                             {% else %}
-                                {{user.username}}
+                            <span class="name">{{user.username}}</span>
                             {% endif %}
                             {% if user.is_superuser %}
-                                <p>admin</p>
+                                <p class="status">admin</p>
                             {% endif%}
                         {% else %}
                             <p>Login first!</p>
