@@ -18,15 +18,15 @@
                 <div class="username-container d-flex">
                     <div class="avatar-container px-3">
                         {% if user.is_authenticated %}
-                        <img src="{{user.account.avatar.url}}" alt="avatar">
-                    {% endif %}                       
+                            <img src="{{user.account.avatar.url}}" alt="avatar">
+                        {% endif %}
                     </div>
                     <div class="user-detail-container">
                         {% if user.is_authenticated %}
                             {% if user.account.first_name and user.account.last_name %}
-                               <span class="name">{{ user.account.get_full_name}}</span> 
+                                <span class="name">{{ user.account.get_full_name}}</span>
                             {% else %}
-                            <span class="name">{{user.username}}</span>
+                                <span class="name">{{user.username}}</span>
                             {% endif %}
                             {% if user.is_superuser %}
                                 <p class="status">admin</p>

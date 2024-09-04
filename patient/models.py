@@ -26,6 +26,7 @@ class Patient(models.Model):
     gender = models.CharField(choices=genders, max_length=10, default="male")
     phone = models.PositiveIntegerField()
     email = models.EmailField()
+    avatar = models.ImageField(upload_to='patients/avatar/', default= 'patients/avatar/avatar.png')
 
     class Meta:
         ordering = ["-id"]
