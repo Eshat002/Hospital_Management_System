@@ -1,5 +1,7 @@
 const patientList = async () => {
-  const patient_list = document.getElementById("patient-list-patient-section");
+  const patient_list_patient_section = document.getElementById(
+    "patient-list-patient-section"
+  );
   const url = "/patient/patient-list/";
   try {
     const res = await fetch(url);
@@ -9,16 +11,25 @@ const patientList = async () => {
     const data = await res.json();
     const patients = data.data;
     console.log("patient", patients);
-    patient_list.innerHTML = "";
+    patient_list_patient_section.innerHTML = "";
     patients.forEach((patient) => {
-      patient_list.innerHTML += `<div class="row">
-          <div class="col-lg-2 name">${patient.name}</div>
-          <div class="col-lg-1 age">${patient.age}</div>
-          <div class="col-lg-2 gender">${patient.gender} </div>
-          <div class="col-lg-2 blood_group">${patient.blood_group}</div>
-          <div class="col-lg-2 phone">${patient.phone}</div>
-          <div class="col-lg-3 email">${patient.email}</div>
-        </div>`;
+      patient_list_patient_section.innerHTML += `<div class="row">
+          <div class="col-lg-2 border-bottom py-3 name">
+          <img class='rounded-circle border me-1' style='width:25px; height:25px; object-fit:cover' src ='${patient.avatar}' alt='avatar'> 
+          <span class='patient-name'>${patient.name} </span>  
+          </div>
+          <div class="col-lg-3 border-bottom py-3 email">
+          <i style="color:#34495e" class="fa-solid fa-envelope me-2"></i>
+          <span class='patient-email'>${patient.email} </span>
+          </div>
+          <div class="col-lg-2 border-bottom py-3 phone">
+          <i style="color:#34495e" class="fa-solid fa-phone me-2"></i>
+          <span class='patient-phone'> + ${patient.phone} </span>
+          </div>
+          <div class="col-lg-1 border-bottom py-3 age"><span class='patient-age'>${patient.age}</span></div>
+          <div class="col-lg-2 border-bottom  py-3 gender"><span class='patient-gender'>${patient.gender}</span> </div>
+          <div class="col-lg-2 border-bottom py-3 blood_group"><span class='patient-blood-group'>${patient.blood_group}</span></div>
+          </div>`;
     });
   } catch (error) {
     console.log("error", error);

@@ -30,6 +30,7 @@ def patient_list(request):
             "phone": patient.phone,
             "id": patient.id,
             "email": patient.email,
+            "avatar": patient.avatar.url
         }
         data.append(patient_data)
 
