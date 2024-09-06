@@ -19,11 +19,11 @@ const patientList = async () => {
           <span class='patient-name'>${patient.name} </span>  
           </div>
           <div class="col-lg-3 border-bottom py-3 email">
-          <i style="color:#34495e" class="fa-solid fa-envelope me-2"></i>
+          <i style="color:var(--primary-color)" class="fa-solid fa-envelope me-2"></i>
           <span class='patient-email'>${patient.email} </span>
           </div>
           <div class="col-lg-2 border-bottom py-3 phone">
-          <i style="color:#34495e" class="fa-solid fa-phone me-2"></i>
+          <i style="color:var(--primary-color)" class="fa-solid fa-phone me-2"></i>
           <span class='patient-phone'> + ${patient.phone} </span>
           </div>
           <div class="col-lg-1 border-bottom py-3 age"><span class='patient-age'>${patient.age}</span></div>

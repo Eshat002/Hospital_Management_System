@@ -17,13 +17,13 @@ aside .menu-container ul {
 }
 aside .menu-container ul li i {
   /* color: #7f8f98; */
-  color: #34495e;
+  color: var(--primary-color);
 }
 
 aside .menu-container ul li a {
   font-weight: 400;
   font-size: 14px;
-  color: #34495e;
+  color: var(--primary-color);
   /* color: #7f8f98; */
   text-decoration: none;
   padding-left: 12px;
@@ -42,7 +42,7 @@ aside .logo-container a {
   padding-top: 40px;
   padding-bottom: 20px;
   text-decoration: none;
-  color: #34495e;
+  color: var(--primary-color);
 }
 
 aside .logo-container .logo-title {

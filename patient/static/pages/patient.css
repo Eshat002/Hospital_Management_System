@@ -26,12 +26,16 @@
   width: 35px;
   height: 35px;
   object-fit: cover;
-  border: 1px solid #242222;
+  border: 1px solid var(--primary-color);
   border-radius: 50%;
 }
 
 #patient .page-headline-container .page-title {
   font-size: 20px;
-  font-weight: 500;
-  color: #374858;
+  font-weight: 600;
+  /* color: #374858; */
+  text-transform: uppercase;
+  background: var(--text-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

@@ -14,7 +14,7 @@ def patient_list(request):
     if len(qs) == 0:
         return JsonResponse({"data": "Your patients appear here"})
 
-    patient_per_page = 4
+    patient_per_page = 8
     paginator = Paginator(qs, patient_per_page)
     page_number = request.GET.get("page")
     patients = paginator.get_page(page_number)
