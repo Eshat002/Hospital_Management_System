@@ -18,3 +18,7 @@ body {
   margin-left: 310px;
   margin-right: 40px;
 }
+
+i {
+  color: var(--primary-color);
+}

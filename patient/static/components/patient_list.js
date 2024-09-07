@@ -2,6 +2,11 @@ const patientList = async () => {
   const patient_list_patient_section = document.getElementById(
     "patient-list-patient-section"
   );
+
+  const patient_list_total_patient = document.getElementById(
+    "patient-list-total-patients"
+  );
+
   const url = "/patient/patient-list/";
   try {
     const res = await fetch(url);
@@ -9,8 +14,10 @@ const patientList = async () => {
       throw new Error("Response was not ok!");
     }
     const data = await res.json();
+
+    patient_list_total_patient.innerHTML = `${data.total_patients}`;
+
     const patients = data.data;
-    console.log("patient", patients);
     patient_list_patient_section.innerHTML = "";
     patients.forEach((patient) => {
       patient_list_patient_section.innerHTML += `<div class="row">

@@ -26,3 +26,10 @@
   span.patient-name {
   text-transform: capitalize;
 }
+
+#patient-list-first-section-search-section .search-input {
+  background-image: url("/static/icons/search_icon.png");
+  background-position: 10px center;
+  background-repeat: no-repeat;
+  padding-left: 35px;
+}

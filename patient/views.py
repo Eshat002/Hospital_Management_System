@@ -43,5 +43,6 @@ def patient_list(request):
             "next_page": next_page,
             "previous_page": previous_page,
             "total_pages": paginator.num_pages,
+            "total_patients": qs.count()
         }
     )

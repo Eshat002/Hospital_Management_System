@@ -15,10 +15,10 @@ aside .logout-menu {
 aside .menu-container ul {
   list-style-type: none;
 }
-aside .menu-container ul li i {
-  /* color: #7f8f98; */
+/* aside .menu-container ul li i {
+  color: #7f8f98;
   color: var(--primary-color);
-}
+} */
 
 aside .menu-container ul li a {
   font-weight: 400;
