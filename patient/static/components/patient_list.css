@@ -1,6 +1,6 @@
 #patient-list {
   background-color: #ffffff;
-  padding: 30px 0px 30px 40px;
+  padding: 0px 0px 30px 40px;
   border-radius: 20px;
 }
 
@@ -27,9 +27,24 @@
   text-transform: capitalize;
 }
 
-#patient-list-first-section-search-section .search-input {
-  background-image: url("/static/icons/search_icon.png");
-  background-position: 10px center;
-  background-repeat: no-repeat;
-  padding-left: 35px;
+/* #patient-list-first-section-search-section .search-input {
+
+} */
+
+#patient-list-first-section-headline-section .headline {
+  font-weight: 500;
+  font-size: 18px;
+  color: #242222;
+  /* border-bottom: var(--primary-color) 2px solid;
+  padding-bottom: 5px; */
+}
+
+/* #patient-list-first-section-headline-section {
+  padding: 0px 20px 10px 0px;
+} */
+
+#patient-list-first-section-search-section .total_patient {
+  font-weight: 500;
+  font-size: 16px;
+  color: #242222;
 }

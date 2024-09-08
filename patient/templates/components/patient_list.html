@@ -4,21 +4,21 @@
 <div class="shadow-sm" id="patient-list">
     <div id="patient-list-first-section">
 
-        <div class="d-flex justify-content-between" id="patient-list-first-section-headline-section">
+        <div class="d-flex justify-content-between align-items-baseline py-3 pe-3 border-bottom" id="patient-list-first-section-headline-section">
             <h2 class="headline">Patient Info</h2>
-            <button>
-                <i class="fa-solid fa-plus"></i>
+            <button class="custom-primary-btn">
+                <i style="color:#ffffff" class="fa-solid fa-plus me-1"></i>
                 Add Patient
             </button>
         </div>
 
-        <div class="d-flex justify-content-between" id="patient-list-first-section-search-section">
-
-            <input class="search-input" type="search" placeholder="Search">
-            <div class="total_patient">
-                <i class="fa-solid fa-user"></i>
+        <div class="d-flex justify-content-between align-items-center py-3 pe-3" id="patient-list-first-section-search-section">
+              <div class="total_patient">
+                <i class="fa-solid fa-user me-2"></i>
                  Patients: <span id = "patient-list-total-patients"></span>
             </div>
+            <input class="search-input primary-search-box" type="search" placeholder="Search">
+           
         </div>
 
     </div>

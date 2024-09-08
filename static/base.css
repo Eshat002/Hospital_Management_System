@@ -22,3 +22,26 @@ body {
 i {
   color: var(--primary-color);
 }
+
+.custom-primary-btn {
+  font-size: 14px;
+  font-family: 400;
+  color: #ffffff;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  text-transform: capitalize;
+}
+
+.primary-search-box {
+  padding: 6px 10px;
+  border: none;
+  background-color: #ebf5ff;
+  border-radius: 15px;
+  background-image: url("/static/icons/search_icon.png");
+  background-position: 15px center;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+  outline: none;
+}
