@@ -4,7 +4,7 @@
 <div class="shadow-sm" id="patient-list">
     <div id="patient-list-first-section">
 
-        <div class="d-flex justify-content-between align-items-baseline py-3 pe-3 border-bottom" id="patient-list-first-section-headline-section">
+        <div class="d-flex justify-content-between align-items-baseline py-2 pe-3 border-bottom" id="patient-list-first-section-headline-section">
             <h2 class="headline">Patient Info</h2>
             <button class="custom-primary-btn">
                 <i style="color:#ffffff" class="fa-solid fa-plus me-1"></i>
@@ -73,6 +73,14 @@
         </div>
         <div id="patient-list-patient-section"></div>
     </div>
-
+    <div class="pt-3 text-end me-3" id="pagination-buttons">
+        <button class="me-1 custom-primary-btn-outline" id="prev-btn" onclick="loadPreviousPage()">
+            prev
+        </button>
+        <button id="next-btn" class="custom-primary-btn" onclick="loadNextPage()">
+            next
+        </button>
+    </div>
+</div>
 </div>
 <script src="{% static 'components/patient_list.js' %}"></script>
